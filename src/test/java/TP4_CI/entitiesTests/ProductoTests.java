@@ -9,30 +9,34 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 public class ProductoTests {
-
-
-    @Test //Primer test Theo
+    @Test
     void testId() {
+        // Crear un nuevo objeto Producto
         Producto producto = new Producto();
+        // Verificar que el id por defecto es 0
         assertEquals(0, producto.getId());
     }
 
-    @Test //Segundo test Theo
+    @Test
     void testGetId() {
-        Producto producto1 = new Producto();
-        producto1.setId(1);
-        int result = producto1.getId();
+        // Crear un nuevo objeto Producto
+        Producto producto = new Producto();
+        // Establecer el id del producto
+        producto.setId(1);
+        // Obtener el id del producto
+        int result = producto.getId();
+        // Verificar que el id es el esperado
         assertEquals(1, result);
     }
 
-    @Test //Tercer test Theo
+    @Test
     void testSetId() {
+        // Crear un nuevo objeto Producto
         Producto producto = new Producto();
+        // Establecer el id del producto
         producto.setId(5);
+        // Verificar que el id se ha establecido correctamente
         assertEquals(5, producto.getId());
     }
-
-
-
 
 }
