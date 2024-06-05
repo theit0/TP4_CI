@@ -8,6 +8,7 @@ class Tp4CiApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("Testing");
 	}
 
 }
