@@ -26,5 +26,8 @@ public class Proveedor {
         return productos;
     }
 
+    public void addProducto(Producto producto){
+        this.productos.add(producto);
+    }
 
 }
