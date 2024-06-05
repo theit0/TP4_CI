@@ -32,6 +32,20 @@ public class ProductoTests {
         assertEquals(5, producto.getId());
     }
 
+    @Test //Primer test Pedro
+    void testGetName(){
+        Producto producto = new Producto();
+        producto.setName("TestName");
+        String nameTest = producto.getName();
+        assertEquals("TestName", nameTest);
+    }
+
+    @Test //Segundo test Pedro
+    void testSetName(){
+        Producto producto = new Producto();
+        producto.setName("TestName");
+        assertEquals("TestName",producto.getName());
+    }
 
 
 

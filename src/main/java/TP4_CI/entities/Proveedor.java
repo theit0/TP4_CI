@@ -1,35 +1,30 @@
 package TP4_CI.entities;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @AllArgsConstructor
 @Entity
 @NoArgsConstructor
-public class Producto {
+
+public class Proveedor {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id", nullable = false)
     private int id;
 
-    public int getId() {
-        return id;
+    @OneToMany(cascade = CascadeType.REFRESH,fetch = FetchType.EAGER)
+    @JoinColumn(name = "productos")
+    private List<Producto> productos;
+
+    public List<Producto> getProductos() {
+        return productos;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-
-    private String nombre;
-
-    public String getName() { return  this.nombre;}
-    public void setName(String n) {this.nombre = n;}
-
-
 
 
 }
