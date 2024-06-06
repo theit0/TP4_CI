@@ -9,16 +9,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 public class ProductoTests {
-    @Test
-    void testId() {
+    @Test //Primer test Theo
+    void testId() { 
         // Crear un nuevo objeto Producto
         Producto producto = new Producto();
         // Verificar que el id por defecto es 0
         assertEquals(0, producto.getId());
     }
 
-    @Test
-    void testGetId() {
+    @Test //Segundo test Theo
+    void testGetId() { 
         // Crear un nuevo objeto Producto
         Producto producto = new Producto();
         // Establecer el id del producto
@@ -29,7 +29,7 @@ public class ProductoTests {
         assertEquals(1, result);
     }
 
-    @Test
+    @Test // Tercer test Theo
     void testSetId() {
         // Crear un nuevo objeto Producto
         Producto producto = new Producto();
@@ -43,16 +43,16 @@ public class ProductoTests {
     @Test //Primer test Pedro
     void testGetName(){
         Producto producto = new Producto();
-        producto.setName("TestName");
-        String nameTest = producto.getName();
+        producto.setNombre("TestName");
+        String nameTest = producto.getNombre();
         assertEquals("TestName", nameTest);
     }
 
     @Test //Segundo test Pedro
     void testSetName(){
         Producto producto = new Producto();
-        producto.setName("TestName");
-        assertEquals("TestName",producto.getName());
+        producto.setNombre("TestName");
+        assertEquals("TestName",producto.getNombre());
     }
 
 
