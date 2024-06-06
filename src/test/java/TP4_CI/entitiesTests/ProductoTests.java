@@ -43,16 +43,16 @@ public class ProductoTests {
     @Test //Primer test Pedro
     void testGetName(){
         Producto producto = new Producto();
-        producto.setName("TestName");
-        String nameTest = producto.getName();
+        producto.setNombre("TestName");
+        String nameTest = producto.getNombre();
         assertEquals("TestName", nameTest);
     }
 
     @Test //Segundo test Pedro
     void testSetName(){
         Producto producto = new Producto();
-        producto.setName("TestName");
-        assertEquals("TestName",producto.getName());
+        producto.setNombre("TestName");
+        assertEquals("TestName",producto.getNombre());
     }
 
 

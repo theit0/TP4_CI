@@ -26,8 +26,8 @@ public class Producto {
 
     private String nombre;
 
-    public String getName() { return  this.nombre;}
-    public void setName(String n) {this.nombre = n;}
+    public String getNombre() { return  this.nombre;}
+    public void setNombre(String n) {this.nombre = n;}
 
 
 
