@@ -17,8 +17,8 @@ public class ProductoTests {
         assertEquals(0, producto.getId());
     }
 
-    @Test //Segundo test Theo
-    void testGetId() { 
+    @Test //Segundo tests Theo
+    void testGetId() {
         // Crear un nuevo objeto Producto
         Producto producto = new Producto();
         // Establecer el id del producto
