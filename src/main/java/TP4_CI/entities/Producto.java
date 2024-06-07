@@ -4,8 +4,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-
 @AllArgsConstructor
 @Entity
 @NoArgsConstructor

@@ -1,9 +1,7 @@
 package TP4_CI.entitiesTests;
 
 import TP4_CI.entities.Producto;
-import TP4_CI.services.ProductoServiceImpl;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

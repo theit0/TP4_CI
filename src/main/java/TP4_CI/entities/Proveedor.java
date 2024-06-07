@@ -30,4 +30,15 @@ public class Proveedor {
         this.productos.add(producto);
     }
 
+    @Column(name = "name", nullable = false)
+    private String name;
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String n) {
+        this.name = n;
+    }
+
 }

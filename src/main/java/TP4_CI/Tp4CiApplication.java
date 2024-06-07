@@ -1,6 +1,5 @@
 package TP4_CI;
 
-import TP4_CI.entities.Producto;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
