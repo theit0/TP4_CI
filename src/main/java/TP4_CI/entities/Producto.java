@@ -29,7 +29,8 @@ public class Producto {
     public String getName() { return  this.nombre;}
     public void setName(String n) {this.nombre = n;}
 
-
-
+    public static boolean revisarstock(int a, int b){
+        return a >= b;
+    }
 
 }
