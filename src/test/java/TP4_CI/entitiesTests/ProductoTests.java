@@ -73,7 +73,7 @@ public class ProductoTests {
         boolean StockValido = Producto.revisarstock(2,3);
         assertFalse(StockValido);
     }
-    
+
     @Test
     void testNombreClaseProducto(){
         Producto producto1 = new Producto();
