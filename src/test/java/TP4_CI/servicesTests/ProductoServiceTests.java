@@ -34,7 +34,7 @@ public class ProductoServiceTests {
         //Simula el metodo del repository devolviendo "camiseta"
         when(productoRepository.busquedaPorNombre("camiseta")).thenReturn(listaEnviada);
 
-        assertEquals("fd",productoService.busquedaPorNombre("camiseta"));
+        assertEquals(listaEnviada,productoService.busquedaPorNombre("camiseta"));
 
     }
 }
