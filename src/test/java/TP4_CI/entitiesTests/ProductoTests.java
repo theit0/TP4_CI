@@ -1,9 +1,7 @@
 package TP4_CI.entitiesTests;
 
 import TP4_CI.entities.Producto;
-import TP4_CI.services.ProductoServiceImpl;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -44,16 +42,16 @@ public class ProductoTests {
     @Test //Primer test Pedro
     void testGetName(){
         Producto producto = new Producto();
-        producto.setName("TestName");
-        String nameTest = producto.getName();
+        producto.setNombre("TestName");
+        String nameTest = producto.getNombre();
         assertEquals("TestName", nameTest);
     }
 
     @Test //Segundo test Pedro
     void testSetName(){
         Producto producto = new Producto();
-        producto.setName("TestName");
-        assertEquals("TestName",producto.getName());
+        producto.setNombre("TestName");
+        assertEquals("TestName",producto.getNombre());
     }
 
     @Test

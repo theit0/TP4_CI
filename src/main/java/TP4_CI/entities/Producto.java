@@ -4,8 +4,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-
 @AllArgsConstructor
 @Entity
 @NoArgsConstructor
@@ -26,8 +24,8 @@ public class Producto {
 
     private String nombre;
 
-    public String getName() { return  this.nombre;}
-    public void setName(String n) {this.nombre = n;}
+    public String getNombre() { return  this.nombre;}
+    public void setNombre(String n) {this.nombre = n;}
 
     public static boolean revisarstock(int a, int b){
         return a >= b;
