@@ -1,11 +1,10 @@
 package TP4_CI.entitiesTests;
 
 import TP4_CI.entities.Producto;
-import TP4_CI.services.ProductoServiceImpl;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 public class ProductoTests {
@@ -55,7 +54,27 @@ public class ProductoTests {
         assertEquals("TestName",producto.getNombre());
     }
 
+    @Test
+    void testStockMayorStockseguridad(){
+        boolean StockValido = Producto.revisarstock(4,3);
+        assertTrue(StockValido);
+    }
 
+    @Test
+    void testStockIgualStockseguridad(){
+        boolean StockValido = Producto.revisarstock(3,3);
+        assertTrue(StockValido);
+    }
 
+    @Test
+    void testStockMenorStockseguridad(){
+        boolean StockValido = Producto.revisarstock(2,3);
+        assertFalse(StockValido);
+    }
 
+    @Test
+    void testNombreClaseProducto(){
+        Producto producto1 = new Producto();
+        assertNotNull(producto1);
+    }
 }
