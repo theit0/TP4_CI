@@ -26,13 +26,15 @@ public class ProductoServiceTests {
         Producto producto = new Producto();
         producto.setNombre("camiseta");
 
+
         List<Producto> listaEnviada = new ArrayList<>();
         listaEnviada.add(producto);
+
 
         //Simula el metodo del repository devolviendo "camiseta"
         when(productoRepository.busquedaPorNombre("camiseta")).thenReturn(listaEnviada);
 
-        assertEquals(listaEnviada,productoService.busquedaPorNombre("camiseta"));
+        assertEquals("fd",productoService.busquedaPorNombre("camiseta"));
 
     }
 }
